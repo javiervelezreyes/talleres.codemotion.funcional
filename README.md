@@ -1,4 +1,4 @@
-# El Camino de la Programación Funcional en JavaSCript
+# El Camino de la Programación Funcional en JavaScript
 
 ### Keywords
 
