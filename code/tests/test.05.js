@@ -9,7 +9,7 @@ Suite (function () {
     }
   }
 
-  let XLog  = Logger (X) 
+  let XLog = Logger (X) 
   let YLog = Logger (Y)
 
   return [

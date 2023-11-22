@@ -32,13 +32,11 @@ Suite (function () {
 function () {
 
   reduce = function reduce (xs, fn, b) {
-    return (function reduce$ (xs, fn, r) {
-      let [y, ...ys] = xs
-      return (
-         empty (xs) && r ||
-        !empty (xs) && reduce$ (ys, fn, fn (r, y))
-      )
-    })(xs, fn, b)
+    let [y, ...ys] = xs
+    return (
+       empty (xs) && b ||
+      !empty (xs) && reduce (ys, fn, fn (b, y))
+    )
   }
 
   let add = (x, y) => x+y

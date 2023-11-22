@@ -1,6 +1,4 @@
 let empty = x => !x.length
-let flat  = x => Object.entries (x)
-let bloat = x => Object.fromEntries (x)
 
 Suite (function () {
 
@@ -35,7 +33,9 @@ Suite (function () {
 },
 
 function () {
-
+  
+  let flat  = x => Object.entries (x)
+  let bloat = x => Object.fromEntries (x)
   let apply = (x, [y, z]) => [y, x(z)]
 
   function Bag (x) {

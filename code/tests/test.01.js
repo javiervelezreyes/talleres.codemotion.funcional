@@ -1,6 +1,16 @@
 Suite (function () {
 
   function add (n) {
+    let idx = 0
+    let out = 0
+    while (idx < n) {
+      out = out + n
+      idx++
+    }
+    return out
+  }
+
+  function add (n) {
     return (
       (n == 0) && 0 ||
       (n >  0) && n + add (n-1)
